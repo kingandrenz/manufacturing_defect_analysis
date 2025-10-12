@@ -45,6 +45,10 @@ notebooks/.ipynb_checkpoints/
 models/
 !models/demo_model.joblib
 
+# Keep these specific models (important artifacts)
+!models/logistic_regression_model.joblib
+!models/random_forest_model.joblib
+
 # ===============================
 # Reports & Figures
 # ===============================
