@@ -1,49 +1,70 @@
-# Python
+# ===============================
+# Core Python Ignore Rules
+# ===============================
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-*.so
-*.ipynb_checkpoints
+*.pkl
+*.joblib
+*.sav
+*.ipynb_checkpoints/
+*.log
 
-# Virtual environments
-.venv/
+# ===============================
+# Virtual Environment
+# ===============================
+.env
+.venv
 env/
 venv/
-ENV/
+flexteckenv/
+*.env
 
-# Data files
-data/raw/
-data/interim/
-data/processed/
-*.csv
-*.xlsx
-*.xls
-*.json
+# ===============================
+# Data Files (Keep processed versions small enough to reproduce)
+# ===============================
+# Ignore large or raw data
+!data/raw/
+!data/interim/
+!data/processed/*.csv
+!data/processed/sample_processed.csv   # keep one small example file if needed
 
-# Models (large or temporary)
+# ===============================
+# Notebooks & Outputs
+# ===============================
+# Ignore checkpoint junk
+notebooks/.ipynb_checkpoints/
+# Keep notebooks themselves (for portfolio)
+!notebooks/*.ipynb
+
+# ===============================
+# Models
+# ===============================
+# Ignore large serialized models but keep a small demo
 models/
-*.joblib
-*.pkl
-*.sav
+!models/demo_model.joblib
 
-# Reports & Figures (auto-generated)
-reports/figures/
-*.png
-*.jpg
-*.jpeg
-*.pdf
+# ===============================
+# Reports & Figures
+# ===============================
+# Ignore generated reports but keep key figures
+reports/
+!reports/figures/
+reports/figures/temp/
+reports/figures/*.tmp
+!reports/figures/feature_importance.png
+!reports/figures/confusion_matrix.png
 
-# Logs & temp files
-logs/
-*.log
-.DS_Store
-Thumbs.db
-
-# VSCode / IDE
+# ===============================
+# IDE / Workspace Files
+# ===============================
 .vscode/
 .idea/
+*.code-workspace
 
-# Exceptions — keep key demo files
-!reports/figures/example_plot.png
-!models/best_model.pkl
+# ===============================
+# System Files
+# ===============================
+.DS_Store
+Thumbs.db
