@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Data files
+data/raw/
+data/interim/
+data/processed/
+*.csv
+*.xlsx
+*.xls
+*.json
+
+# Models (large or temporary)
+models/
+*.joblib
+*.pkl
+*.sav
+
+# Reports & Figures (auto-generated)
+reports/figures/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Logs & temp files
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Exceptions — keep key demo files
+!reports/figures/example_plot.png
+!models/best_model.pkl
