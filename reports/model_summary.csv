@@ -1,0 +1,3 @@
+Model,TrainAccuracy,TestAccuracy,CVMeanAccuracy,Precision,Recall,F1,Comment
+Logistic Regression,0.83,0.84,0.68,0.74,0.68,0.72,"Simple, interpretable"
+Random Forest,0.83,0.84,0.83,0.81,0.7,0.75,Higher complexity

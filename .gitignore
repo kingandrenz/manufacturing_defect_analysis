@@ -53,7 +53,7 @@ models/
 # Reports & Figures
 # ===============================
 # Ignore generated reports but keep key figures
-reports/
+!reports/
 !reports/figures/
 reports/figures/temp/
 reports/figures/*.tmp
